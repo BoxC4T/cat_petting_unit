@@ -66,15 +66,15 @@ func mapOpCode(op string) string {
 	case "nand":
 		return "010"
 	case "lw":
-		return "011"
-	case "sw":
 		return "100"
-	case "beq":
+	case "sw":
 		return "101"
-	case "jalr":
+	case "beq":
 		return "110"
-	case "lui":
+	case "jalr":
 		return "111"
+	case "lui":
+		return "011"
 	}
 	return ""
 }
